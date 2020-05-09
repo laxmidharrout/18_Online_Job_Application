@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Form</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+            background-image: url("../img/background1.jpg");
+            color: white;
+        }
+        h1{
+            text-align: center;
+            font-family: "Old English Text MT",sans-serif;
+            text-shadow: 0 0 15px blue;
+            font-size: 40px;
+        }
+        form{
+            border: 2px solid white;
+            background-color: rgba(0,0,0,0.5);
+            padding: 15px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            box-shadow: 0 0 15px black;
+            margin: 0 25px 30px 25px;
+        }
+
+        table{
+            width: 100%;
+        }
+        td{
+            font-size: 18px;
+            padding: 5px;
+        }
+        input[type='text'],
+        input[type='date']
+        {
+            font-size: 18px;
+            height: 35px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+        }
+
+        input[type='text']:focus,
+        input[type='date']:focus,
+        {
+            background-color:#cfab89 ;
+            box-shadow: 0 0 15px red;
+        }
+
+    </style>
+
+</head>
+<body>
+<h1>Job Application Form</h1>
+<h3>
+    Thank you for your interest in working with us.
+    Please check below for available job oppurtunites that meet your criteria & send your application by filling out of the job application form.
+</h3>
+
+<form>
+    <table>
+        <div>
+        <tr>
+            <td>First Name</td>
+            <td>
+                <input type="text">
+            </td>
+
+            <td>Last Name</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>What position are you applying for?</td>
+            <td>
+                <select>
+                <option>job1</option>
+                <option>job2</option>
+                <option>job3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Available start date</td>
+            <td>
+                <input type="date">
+            </td>
+        </tr>
+        <tr>
+            <td>What is your current employement status?</td>
+            <td>
+                <input type="radio" name="status" value="employed">Employed
+                <input type="radio" name="status" value="self-employed">Self-employed
+                <br>
+                <input type="radio" name="status" value="unemployed">Unemployed
+                <input type="radio" name="status" value="student">Student
+            </td>
+        </tr>
+        <tr>
+            <td>Submit your resume by providing your resume URL:</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Upload your resume</td>
+            <td>
+                <input type="file" name="resume" accept="image">
+                <input type="submit">
+            </td>
+        </tr>
+        </div>
+
+        <div>
+
+
+        <tr>
+            <td>Would you like to list references?</td>
+            <td>
+                <input type="radio" name="list" value="yes">Yes
+                <br>
+                <input type="radio" name="list" value="no">No
+            </td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td>
+                <input type="text">
+            </td>
+
+            <td>Last Name</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Submit" class="button">
+            </td>
+            <td>
+                <input type="reset" value="Reset" class="button">
+            </td>
+            <td></td>
+        </tr>
+        </div>
+
+    </table>
+
+</form>
+
+
+
+
+
+</body>
+</html>
